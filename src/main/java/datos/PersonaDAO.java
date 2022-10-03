@@ -5,7 +5,7 @@ import java.util.*;
 
 import domain.Persona;
 
-public class PersonaDAO {
+public class PersonaDAO implements PersonaDTO{
     private static final String SQL_SELECT = "SELECT idPersona, nombre, apellido, email, telefono FROM test.persona";
     private static final String SQL_INSERT = "INSERT INTO persona (nombre, apellido, email, telefono) VALUES (?,?,?,?)";
     private static final String SQL_UPDATED = "UPDATE persona SET nombre=?, apellido=?, email=?, telefono=? WHERE idPersona=?";

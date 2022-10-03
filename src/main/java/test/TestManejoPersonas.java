@@ -12,7 +12,7 @@ public class TestManejoPersonas {
         Connection conexion = null;
         try {
             conexion = Conexion.getConnection();
-            PersonaDAO personaDAO = new PersonaDAO(conexion);
+            PersonaDTO personaDAO = new PersonaDAO(conexion);
             if (conexion.getAutoCommit()){
                 conexion.setAutoCommit(false);
             }
